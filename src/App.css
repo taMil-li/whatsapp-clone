@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+    background-color: #e5ddd5; /* WhatsApp background color */
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 800px;
+    height: 95vh;
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+    background-color: #f0f0f0;
+}
+
+.chat-window {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'); /* WhatsApp background pattern */
+    background-repeat: repeat;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    background-color: #075E54;
+    color: white;
+    border-left: 1px solid #f0f0f0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-info h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.user-info p {
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.message-list {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.message-bubble {
+    max-width: 65%;
+    padding: 8px 12px;
+    border-radius: 7.5px;
+    margin-bottom: 10px;
+    position: relative;
+    word-wrap: break-word;
+}
+
+.message-bubble.sent {
+    background-color: #dcf8c6; /* Sent message color */
+    align-self: flex-end;
+}
+
+.message-bubble.received {
+    background-color: #fff; /* Received message color */
+    align-self: flex-start;
+}
+
+.message-bubble p {
+    margin: 0;
+    padding-bottom: 15px; /* Space for the timestamp */
+}
+
+.timestamp {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-size: 11px;
+    color: #999;
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-top: 1px solid #ddd;
+}
+
+.message-input form {
+    display: flex;
+    width: 100%;
+}
+
+.message-input input {
+    flex: 1;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 15px;
+}
+
+.message-input input:focus {
+    outline: none;
+}
+
+.message-input button {
+    background-color: #128C7E; /* Send button color */
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
